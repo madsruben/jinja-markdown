@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/png" href="">
+    <title>Default Title {% block pagetitle %} Default Pagetitle {% endblock pagetitle %}</title>
+
+    <style type="text/css">
+        
+        
+    </style>
+</head>
+<body>
+    
+    {% include 'templates/nav.j2' %}
+
+    <div class="titlebar">
+        <h1>Header</h1>
+    </div>
+
+    <div class="content grid">
+    
+        {% block content %}
+        
+        {% endblock content %}
+
+        <div>
+            <h3>Impressum</h3>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        {% block script %}
+        {% endblock script %}
+    </script>
+</body>
+</html>
+
+

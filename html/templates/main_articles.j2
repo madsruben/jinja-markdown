@@ -1,0 +1,19 @@
+
+{% extends 'templates/main.j2' %}
+{% block pagetitle %}{% block article_pagetitle %}{% endblock article_pagetitle %}{% endblock pagetitle %}    
+
+{% block content %}
+
+        <div>
+            {% block article_title %}{% endblock article_title %}
+        </div>
+
+        {% block article_content %}
+
+        {% endblock article_content %}
+
+        <div>
+            <p>Article Footer</p>
+        </div>
+
+{% endblock content %}
